@@ -19,6 +19,6 @@ Pokemon 이미지를 활용하여 DCGAN을 구현하였습니다.
 ![High3](https://github.com/Doyosae/GAN_Pokemon/blob/master/DCGAN/High%20Resolution%20Sample/High%20Resolu%204.png)  
   
 ### Low Resolution  
-![sample2](https://github.com/Doyosae/GAN_Models/blob/master/Pokemon%20Image/Sample/%EC%83%98%ED%94%8C%20(2).png)  
-![sample4](https://github.com/Doyosae/GAN_Models/blob/master/Pokemon%20Image/Sample/%EC%83%98%ED%94%8C%20(4).png)  
-![sample6](https://github.com/Doyosae/GAN_Models/blob/master/Pokemon%20Image/Sample/%EC%83%98%ED%94%8C%20(6).png)  
+![sample2](https://github.com/Doyosae/GAN_Pokemon/blob/master/DCGAN/Low%20Resolution%20Sample/Low%20Resolu%20(2).png) 
+![sample4](https://github.com/Doyosae/GAN_Pokemon/blob/master/DCGAN/Low%20Resolution%20Sample/Low%20Resolu%20(4).png)  
+![sample6](https://github.com/Doyosae/GAN_Pokemon/blob/master/DCGAN/Low%20Resolution%20Sample/Low%20Resolu%20(6).png)
