@@ -29,7 +29,8 @@ LoadImage = np.array (os.listdir (ImagePath))
 LoadImage = LoadImage [ : SliceNumber]
 print (LoadImage[0 : 5])
 
-#
+
+
 def Get_Array_Image (Inputs) :
     
     TempTrainImage = []
@@ -44,6 +45,7 @@ def Get_Array_Image (Inputs) :
     
     return Outputs
 
+
 # 데이터셋트를 셔플하고 배치 사이즈만큼 슬라이스해서 내보낸다. 
 def Build_Shuffle_BatchData (BatchSize, Input) :
     
@@ -52,6 +54,7 @@ def Build_Shuffle_BatchData (BatchSize, Input) :
     Output = TempGetImage
     
     return Output
+
 
 # 아래에서 사용해야할 변수는 Array로 만든 GetImage를 사용한다.
 GetImage = np.array (Get_Array_Image (LoadImage))
@@ -64,14 +67,16 @@ GetImage = Build_Shuffle_BatchData (100, GetImage)
 fig, ax = plt.subplots(1, 5, figsize=(20, 20))
 
 for i in range(0, 5) :
+    
     ax[i].set_axis_off()
     ax[i].imshow(GetImage[i])
 
 plt.show()
 
 
-# 1. Generator Function, # Noise가 들어오면 4*4*1024 레이어와 풀로 연결된다.
+# Generator Function, # Noise가 들어오면 4*4*1024 레이어와 풀로 연결된다.
 def Build_Generator (inputs): 
+    
     with tf.variable_scope("GeneratorVal"):
         
         output = tf.layers.dense(inputs, 4*4*1024)
@@ -97,8 +102,9 @@ def Build_Generator (inputs):
     return output
  
     
-# 2. Discriminator Function
+# Discriminator Function
 def Build_Discriminator (inputs, reuse = None):
+    
     with tf.variable_scope("DiscriminatorVal") as scope:
         
         if reuse:
@@ -121,7 +127,7 @@ def Build_Discriminator (inputs, reuse = None):
     return output
  
     
-# 3. Noise Function
+# Noise Function
 def Build_GetNoise (batch_size, noise_size):
     return np.random.uniform(-1.0, 1.0, size=[batch_size, noise_size])
 
