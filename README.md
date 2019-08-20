@@ -5,8 +5,9 @@ py 파일이지만 실행 시에, 구글 Colab 환경에서 작동하시길 권�
 1. 구글 드라이브에 직접 포켓몬 이미지를 올려서 쓰기  
 2. 캐글 API로 구글 코랩에 연동  
 3. 캐글 커널에서 실행  
+  
 저는 데이터셋이 구글 드라이브에 로드되어 있어 바로 마운트하고 사용하였습니다.  
-- https://www.kaggle.com/kvpratama/pokemon-images-dataset  
+데이터셋 링크 : https://www.kaggle.com/kvpratama/pokemon-images-dataset  
   
 ***
 # DCGAN with Pokemon Summary    
