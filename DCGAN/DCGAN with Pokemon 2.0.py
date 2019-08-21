@@ -27,12 +27,11 @@ from keras.backend.tensorflow_backend import set_session
 FilePath = "/content/drive/My Drive/Colab Notebooks/Datasets/Pokemon"
 SavePath = "/content/drive/My Drive/Colab Notebooks/Datasets/Pokemon/save"
 
+
 DirectoryList = []
 
 for dirname, _, filenames in os.walk(FilePath):
-    
     for filename in filenames:
-        
         DirectoryList.append(os.path.join(dirname, filename))
 
         
@@ -46,6 +45,7 @@ for number in range (len(DirectoryList)):
 
 print (np.shape(PokemonImage))
 plt.imshow (PokemonImage[10])
+
 
 # Define Build Function Toolkit
 def Build_Shuffle_BatchData (BatchSize, Input) :
