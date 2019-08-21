@@ -9,26 +9,6 @@ from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from keras.backend.tensorflow_backend import set_session
 
-from google.colab import files
-files.upload()
-
-!mkdir -p ~/.kaggle
-!cp kaggle.json ~/.kaggle/
-!chmod 600 ~/.kaggle/kaggle.json
-
-# 데이터셋 다운로드 받기 - 링크는 그 대회 'Data'에 있음
-!kaggle datasets download -d kvpratama/pokemon-images-dataset
-!unzip pokemon-images-dataset.zip
-!unzip pokemon.zip
-
-ImagePath = "pokemon/"
-WantedImageShape = (64, 64, 3)
-SliceNumber = 800
-
-LoadImage = np.array (os.listdir (ImagePath))
-LoadImage = LoadImage [ : SliceNumber]
-print (LoadImage[0 : 5])
-
 
 
 def Get_Array_Image (Inputs) :
