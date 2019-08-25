@@ -1,5 +1,6 @@
 # Introduction  
-Pokemon 이미지 800여 장으로 DCGAN 모델을 구현합니다. 데이터셋은 Kaggle의 잘 정리된 포켓몬 정사각형 사진을 사용하였습니다.  
+Pokemon 이미지 800여 장으로 DCGAN 모델을 구현합니다.  
+데이터셋은 Kaggle의 잘 정리된 포켓몬 정사각형 사진을 사용하였습니다.  
 소스코드는 실행 할때, 구글 Colab 환경에서 작동하시길 권유합니다.  
 1. 구글 드라이브에 직접 데이터셋을 업로드하기  
 2. 캐글 API로 구글 코랩과 연동후 데이터셋 다운로드 (Call Kaggle in Colab.ipynb 참조)  
@@ -9,7 +10,7 @@ Pokemon 이미지 800여 장으로 DCGAN 모델을 구현합니다. 데이터셋
 데이터셋 링크 : https://www.kaggle.com/kvpratama/pokemon-images-dataset  
     
 ***
-# DCGAN with Pokemon Summary    
+# DCGAN with Pokemon Summary  
 Pokemon 이미지를 활용하여 DCGAN을 구현하였습니다.  
     
 ### High Resolution  
