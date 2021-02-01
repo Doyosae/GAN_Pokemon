@@ -9,7 +9,7 @@ Pokemon 이미지 800여 장으로 DCGAN 모델을 구현
 데이터셋 링크 : https://www.kaggle.com/kvpratama/pokemon-images-dataset  
   
 # DCGAN for Pokemon Summary  
-- Pokemon 이미지를 활용하여 DCGAN을 구현하였습니다.  
+- Pokemon 이미지를 활용하여 DCGAN을 구현  
   
 ### High Resolution  
 ![High1](https://github.com/Doyosae/GAN_Pokemon/blob/master/DCGAN/sample1/high%20(7).png)
